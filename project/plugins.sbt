@@ -1,10 +1,4 @@
-// Project plugins
-addSbtPlugin("org.foundweekends" % "sbt-bintray" % "0.5.1")
-
-addSbtPlugin("com.github.gseitz" % "sbt-release" % "1.0.6")
-
-// Testing plugins
-libraryDependencies += "org.scala-sbt" %% "scripted-plugin" % sbtVersion.value
+addSbtPlugin("com.github.sbt" % "sbt-github-actions" % "0.28.0")
 
 // Style and code style plugins
 
