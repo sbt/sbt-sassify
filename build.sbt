@@ -19,7 +19,7 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.2.11" % "test",
   "org.scalatest" %% "scalatest-mustmatchers" % "3.2.11" % "test",
   "org.scalatest" %% "scalatest-funspec" % "3.2.11" % "test",
-  "net.java.dev.jna" % "jna" % "5.10.0"
+  "net.java.dev.jna" % "jna" % "5.19.0"
 )
 
 // Compiler settings
