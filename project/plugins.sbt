@@ -8,7 +8,7 @@ libraryDependencies += "org.scala-sbt" %% "scripted-plugin" % sbtVersion.value
 
 // Style and code style plugins
 
-addSbtPlugin("de.heikoseeberger" % "sbt-header" % "3.0.1")
+addSbtPlugin("de.heikoseeberger" % "sbt-header" % "3.0.2")
 
 addSbtPlugin("org.scalastyle" %% "scalastyle-sbt-plugin" % "1.0.0")
 
