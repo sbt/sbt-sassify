@@ -9,11 +9,13 @@ organizationName := "Han van Venrooij"
 startYear := Some(2018)
 sbtPlugin := true
 
-fork in Test := false
+pluginCrossBuild / sbtVersion := "1.5.0"
+
+Test / fork := false
 
 javaOptions += "-Djna.nosys=true"
 
-addSbtPlugin("com.typesafe.sbt" % "sbt-web" % "1.4.4")
+addSbtPlugin("com.github.sbt" % "sbt-web" % "1.5.3")
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.2.20" % "test",
@@ -23,7 +25,6 @@ libraryDependencies ++= Seq(
 )
 
 // Compiler settings
-crossSbtVersions := Seq("1.1.1", "0.13.16")
 sourcesInBase := false
 crossPaths := false
 scalacOptions ++= Seq(
